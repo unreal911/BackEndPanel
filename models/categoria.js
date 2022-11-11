@@ -7,8 +7,12 @@ const categoriaSchema = Schema({
         required: [true, 'El nombre es obligatorio']
     },
     img: {
-        type: String,
-        default: ''
+        type: Object,
+        default: {
+            id:'NoImage',
+            url:'NoUrl',
+            originalName:'NoName'
+        }
     },
     estado: {
         type: Boolean,

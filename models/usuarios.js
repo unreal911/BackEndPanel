@@ -16,7 +16,12 @@ const UsuarioSchema = Schema({
         required: true,
     },
     img: {
-        type: String,
+        type: Object,
+        default: {
+            id: 'NoImage',
+            url: 'NoUrl',
+            originalName:'NoName'
+        }
     },
     rol: {
         type: String,
