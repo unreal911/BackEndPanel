@@ -15,8 +15,9 @@ router.post('/:tipo/:id',[
   validarJWT,
   tieneRole('ADMIN_ROL','USER_ROL'),
   validarimagen,
-  
+
   validarCampos
 ],subirImagen)
+router.post('/googleDrive')
 
 module.exports=router
