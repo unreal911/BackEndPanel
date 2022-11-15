@@ -9,7 +9,7 @@ const existeModelo = async (valor, campo, Modelo,) => {
 
     const existeModelo = await Modelo.findOne(obj)
     if (existeModelo) {
-        throw new Error(`El valor ${campo} : ${valor} , existe en la base de datos`);
+        throw new Error(`El campo ${campo} : ${valor} , existe en la base de datos`);
     }
 
 }

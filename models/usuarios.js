@@ -19,8 +19,6 @@ const UsuarioSchema = Schema({
         type: Object,
         default: {
             id: 'NoImage',
-            url: 'NoUrl',
-            originalName:'NoName'
         }
     },
     rol: {

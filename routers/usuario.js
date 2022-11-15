@@ -25,8 +25,6 @@ router.get('/:id', [
     usuarioxid)
 
 router.post('/', [
-    validarJWT,
-    esAdminRole,
     check('email', 'El correo debe ser obligatorio').notEmpty(),
     check('password', 'el password es obligatorio').notEmpty(),
     check('nombre', 'El nombre es obligatorio').notEmpty(),
